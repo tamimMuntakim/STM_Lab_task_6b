@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: Subtraction</title>
+    <title>JSDoc: Class: PrimeChecker</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Class: Subtraction</h1>
+    <h1 class="page-title">Class: PrimeChecker</h1>
 
     
 
@@ -28,9 +28,9 @@
 
 <header>
     
-        <h2><span class="attribs"><span class="type-signature"></span></span>Subtraction<span class="signature">(a<span class="signature-attributes">opt</span>, b<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h2>
+        <h2><span class="attribs"><span class="type-signature"></span></span>PrimeChecker<span class="signature">(numberToCheck<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h2>
         
-            <div class="class-description">Represents a utility class for subtraction operations.The primary method, 'subtract', is overloaded to handle two numbers or an array of subtrahends.</div>
+            <div class="class-description">Boolean variables should start with verbs like is, has, can, should.Represents a utility class for checking primality of numbers.</div>
         
     
 </header>
@@ -45,7 +45,7 @@
     
 
     
-    <h4 class="name" id="Subtraction"><span class="type-signature"></span>new Subtraction<span class="signature">(a<span class="signature-attributes">opt</span>, b<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="PrimeChecker"><span class="type-signature"></span>new PrimeChecker<span class="signature">(numberToCheck<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
     
 
     
@@ -53,7 +53,7 @@
 
 
 <div class="description">
-    Creates an instance of the Subtraction class.
+    Creates an instance of the PrimeChecker class.
 </div>
 
 
@@ -93,7 +93,7 @@
 
         <tr>
             
-                <td class="name"><code>a</code></td>
+                <td class="name"><code>numberToCheck</code></td>
             
 
             <td class="type">
@@ -120,51 +120,12 @@
             
                 <td class="default">
                 
-                    0
+                    1
                 
                 </td>
             
 
-            <td class="description last">The default starting operand.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>b</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    0
-                
-                </td>
-            
-
-            <td class="description last">The default subtrahend.</td>
+            <td class="description last">The default number to be checked for primality.</td>
         </tr>
 
     
@@ -205,7 +166,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lab_6b_wasef.jsx.html">lab_6b_wasef.jsx</a>, <a href="lab_6b_wasef.jsx.html#line14">line 14</a>
+        <a href="lab_6b_shahin.jsx.html">lab_6b_shahin.jsx</a>, <a href="lab_6b_shahin.jsx.html#line13">line 13</a>
     </li></ul></dd>
     
 
@@ -255,13 +216,13 @@
 
         
             
-<h4 class="name" id="valueA"><span class="type-signature"></span>valueA<span class="type-signature"> :number</span></h4>
+<h4 class="name" id="numberToCheck"><span class="type-signature"></span>numberToCheck<span class="type-signature"> :number</span></h4>
 
 
 
 
 <div class="description">
-    The internal default value A.
+    The number currently stored for checking.
 </div>
 
 
@@ -309,79 +270,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lab_6b_wasef.jsx.html">lab_6b_wasef.jsx</a>, <a href="lab_6b_wasef.jsx.html#line31">line 31</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="valueB"><span class="type-signature"></span>valueB<span class="type-signature"> :number</span></h4>
-
-
-
-
-<div class="description">
-    The internal default value B.
-</div>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type">number</span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lab_6b_wasef.jsx.html">lab_6b_wasef.jsx</a>, <a href="lab_6b_wasef.jsx.html#line37">line 37</a>
+        <a href="lab_6b_shahin.jsx.html">lab_6b_shahin.jsx</a>, <a href="lab_6b_shahin.jsx.html#line27">line 27</a>
     </li></ul></dd>
     
 
@@ -409,7 +298,7 @@
     
 
     
-    <h4 class="name" id="subtract"><span class="type-signature"></span>subtract<span class="signature">(startingValue, subtrahends)</span><span class="type-signature"> &rarr; {number}</span></h4>
+    <h4 class="name" id="isPrime"><span class="type-signature"></span>isPrime<span class="signature">(n)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
     
 
     
@@ -417,7 +306,7 @@
 
 
 <div class="description">
-    Calculates the difference between numbers, supporting two primary signatures.Overload Signatures Handled:1. subtract(a: number, b: number): number2. subtract(startingValue: number, subtrahends: number[]): number
+    Checks if a given positive integer is a prime number.This function is NOT overloaded per the project requirements.
 </div>
 
 
@@ -453,7 +342,7 @@
 
         <tr>
             
-                <td class="name"><code>startingValue</code></td>
+                <td class="name"><code>n</code></td>
             
 
             <td class="type">
@@ -469,33 +358,7 @@
 
             
 
-            <td class="description last">The initial value to subtract from.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>subtrahends</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-|
-
-<span class="param-type">Array.&lt;number></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">A single number, or an array of numbers to be subtracted sequentially.</td>
+            <td class="description last">The positive integer to check.</td>
         </tr>
 
     
@@ -536,7 +399,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lab_6b_wasef.jsx.html">lab_6b_wasef.jsx</a>, <a href="lab_6b_wasef.jsx.html#line52">line 52</a>
+        <a href="lab_6b_shahin.jsx.html">lab_6b_shahin.jsx</a>, <a href="lab_6b_shahin.jsx.html#line38">line 38</a>
     </li></ul></dd>
     
 
@@ -565,7 +428,7 @@
 
         
 <div class="param-desc">
-    The final difference.
+    True if the number is prime, false otherwise.
 </div>
 
 
@@ -576,7 +439,7 @@
     </dt>
     <dd>
         
-<span class="param-type">number</span>
+<span class="param-type">boolean</span>
 
 
     </dd>
