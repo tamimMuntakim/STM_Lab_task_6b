@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: Addition</title>
+    <title>JSDoc: Class: Multiplication</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Class: Addition</h1>
+    <h1 class="page-title">Class: Multiplication</h1>
 
     
 
@@ -28,9 +28,9 @@
 
 <header>
     
-        <h2><span class="attribs"><span class="type-signature"></span></span>Addition<span class="signature">(initialValue<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h2>
+        <h2><span class="attribs"><span class="type-signature"></span></span>Multiplication<span class="signature">(factorA<span class="signature-attributes">opt</span>, factorB<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h2>
         
-            <div class="class-description">Represents a utility class for addition operations.It features a single overloaded method, 'add', to handle various input formats.</div>
+            <div class="class-description">Represents a utility class for multiplication operations.The primary method, 'multiply', is overloaded to handle two factors or an array of factors.</div>
         
     
 </header>
@@ -45,7 +45,7 @@
     
 
     
-    <h4 class="name" id="Addition"><span class="type-signature"></span>new Addition<span class="signature">(initialValue<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="Multiplication"><span class="type-signature"></span>new Multiplication<span class="signature">(factorA<span class="signature-attributes">opt</span>, factorB<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
     
 
     
@@ -53,7 +53,7 @@
 
 
 <div class="description">
-    Creates an instance of the Addition class.
+    Creates an instance of the Multiplication class.
 </div>
 
 
@@ -93,7 +93,7 @@
 
         <tr>
             
-                <td class="name"><code>initialValue</code></td>
+                <td class="name"><code>factorA</code></td>
             
 
             <td class="type">
@@ -120,12 +120,51 @@
             
                 <td class="default">
                 
-                    0
+                    1
                 
                 </td>
             
 
-            <td class="description last">An optional initial value for internal state, though the methods are static-like.</td>
+            <td class="description last">The default first factor.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>factorB</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    1
+                
+                </td>
+            
+
+            <td class="description last">The default second factor.</td>
         </tr>
 
     
@@ -166,7 +205,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lab_6b_tamim.jsx.html">lab_6b_tamim.jsx</a>, <a href="lab_6b_tamim.jsx.html#line13">line 13</a>
+        <a href="lab_6b_rimon.jsx.html">lab_6b_rimon.jsx</a>, <a href="lab_6b_rimon.jsx.html#line13">line 13</a>
     </li></ul></dd>
     
 
@@ -216,13 +255,13 @@
 
         
             
-<h4 class="name" id="baseValue"><span class="type-signature"></span>baseValue<span class="type-signature"> :number</span></h4>
+<h4 class="name" id="factorA"><span class="type-signature"></span>factorA<span class="type-signature"> :number</span></h4>
 
 
 
 
 <div class="description">
-    The internal base value (only used as an example for constructor requirement).
+    The internal default value for factor A.
 </div>
 
 
@@ -270,7 +309,79 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lab_6b_tamim.jsx.html">lab_6b_tamim.jsx</a>, <a href="lab_6b_tamim.jsx.html#line28">line 28</a>
+        <a href="lab_6b_rimon.jsx.html">lab_6b_rimon.jsx</a>, <a href="lab_6b_rimon.jsx.html#line29">line 29</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="factorB"><span class="type-signature"></span>factorB<span class="type-signature"> :number</span></h4>
+
+
+
+
+<div class="description">
+    The internal default value for factor B.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lab_6b_rimon.jsx.html">lab_6b_rimon.jsx</a>, <a href="lab_6b_rimon.jsx.html#line35">line 35</a>
     </li></ul></dd>
     
 
@@ -298,7 +409,7 @@
     
 
     
-    <h4 class="name" id="add"><span class="type-signature"></span>add<span class="signature">(a, b<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {number|string}</span></h4>
+    <h4 class="name" id="multiply"><span class="type-signature"></span>multiply<span class="signature">(factorsOrA, b<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {number}</span></h4>
     
 
     
@@ -306,7 +417,7 @@
 
 
 <div class="description">
-    Adds numbers together based on the input type and count, simulating method Overloading.Overload Signatures Handled:1. add(a: number, b: number): number2. add(numbers: number[]): number3. add(a: string, b: string): number (Converts string inputs to numbers)
+    Calculates the product of numbers, supporting two primary signatures.Overload Signatures Handled:1. multiply(a: number, b: number): number2. multiply(factors: number[]): number
 </div>
 
 
@@ -344,7 +455,7 @@
 
         <tr>
             
-                <td class="name"><code>a</code></td>
+                <td class="name"><code>factorsOrA</code></td>
             
 
             <td class="type">
@@ -354,9 +465,6 @@
 |
 
 <span class="param-type">Array.&lt;number></span>
-|
-
-<span class="param-type">string</span>
 
 
             
@@ -374,7 +482,7 @@
 
             
 
-            <td class="description last">The first operand (number, array of numbers, or number string).</td>
+            <td class="description last">Either an array of factors, or the first factor 'A'.</td>
         </tr>
 
     
@@ -388,9 +496,6 @@
             
                 
 <span class="param-type">number</span>
-|
-
-<span class="param-type">string</span>
 
 
             
@@ -410,7 +515,7 @@
 
             
 
-            <td class="description last">The second optional operand (number or number string).</td>
+            <td class="description last">The second factor 'B', used only in the two-number signature.</td>
         </tr>
 
     
@@ -451,7 +556,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lab_6b_tamim.jsx.html">lab_6b_tamim.jsx</a>, <a href="lab_6b_tamim.jsx.html#line44">line 44</a>
+        <a href="lab_6b_rimon.jsx.html">lab_6b_rimon.jsx</a>, <a href="lab_6b_rimon.jsx.html#line50">line 50</a>
     </li></ul></dd>
     
 
@@ -480,192 +585,7 @@
 
         
 <div class="param-desc">
-    The sum of the inputs, or an error message for invalid input.
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">number</span>
-|
-
-<span class="param-type">string</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="handleUserAddition"><span class="type-signature"></span>handleUserAddition<span class="signature">(a, b)</span><span class="type-signature"> &rarr; {number}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    A specialized function for event handlers, often starting with 'handle'.This example demonstrates adding two numbers after a hypothetical user interaction.
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>a</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">The first operand.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>b</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">The second operand.</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lab_6b_tamim.jsx.html">lab_6b_tamim.jsx</a>, <a href="lab_6b_tamim.jsx.html#line83">line 83</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    The result of the addition.
+    The product.
 </div>
 
 

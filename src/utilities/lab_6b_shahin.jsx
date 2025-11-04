@@ -1,6 +1,6 @@
 /**
  * @file This file contains the PrimeChecker class for determining if a number is prime.
- * @author MemberFive <member.five@team.com>
+ * @author Shahin <shahinalhasan2254@gmail.com>
  * @version 1.0.0
  */
 
