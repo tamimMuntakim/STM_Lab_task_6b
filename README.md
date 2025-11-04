@@ -1,4 +1,5 @@
 jsDoc generation:
+
 ```
-npx jsdoc src/utilities/file.jsx -d src/docs-output
+npx jsdoc src/utilities -r -d src/docs-output
 ```
