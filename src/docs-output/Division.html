@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: Addition</title>
+    <title>JSDoc: Class: Division</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Class: Addition</h1>
+    <h1 class="page-title">Class: Division</h1>
 
     
 
@@ -28,9 +28,9 @@
 
 <header>
     
-        <h2><span class="attribs"><span class="type-signature"></span></span>Addition<span class="signature">(initialValue<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h2>
+        <h2><span class="attribs"><span class="type-signature"></span></span>Division<span class="signature">(numerator<span class="signature-attributes">opt</span>, denominator<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h2>
         
-            <div class="class-description">Represents a utility class for addition operations.It features a single overloaded method, 'add', to handle various input formats.</div>
+            <div class="class-description">Represents a utility class for division operations.It features the 'divide' method, which is overloaded, and a related 'getModulus' method.</div>
         
     
 </header>
@@ -45,7 +45,7 @@
     
 
     
-    <h4 class="name" id="Addition"><span class="type-signature"></span>new Addition<span class="signature">(initialValue<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="Division"><span class="type-signature"></span>new Division<span class="signature">(numerator<span class="signature-attributes">opt</span>, denominator<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
     
 
     
@@ -53,7 +53,7 @@
 
 
 <div class="description">
-    Creates an instance of the Addition class.
+    Creates an instance of the Division class.
 </div>
 
 
@@ -93,7 +93,7 @@
 
         <tr>
             
-                <td class="name"><code>initialValue</code></td>
+                <td class="name"><code>numerator</code></td>
             
 
             <td class="type">
@@ -125,7 +125,46 @@
                 </td>
             
 
-            <td class="description last">An optional initial value for internal state, though the methods are static-like.</td>
+            <td class="description last">The default numerator.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>denominator</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    1
+                
+                </td>
+            
+
+            <td class="description last">The default denominator.</td>
         </tr>
 
     
@@ -166,7 +205,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lab_6b_tamim.jsx.html">lab_6b_tamim.jsx</a>, <a href="lab_6b_tamim.jsx.html#line13">line 13</a>
+        <a href="lab_6b_shawlin.jsx.html">lab_6b_shawlin.jsx</a>, <a href="lab_6b_shawlin.jsx.html#line13">line 13</a>
     </li></ul></dd>
     
 
@@ -216,13 +255,13 @@
 
         
             
-<h4 class="name" id="baseValue"><span class="type-signature"></span>baseValue<span class="type-signature"> :number</span></h4>
+<h4 class="name" id="denominator"><span class="type-signature"></span>denominator<span class="type-signature"> :number</span></h4>
 
 
 
 
 <div class="description">
-    The internal base value (only used as an example for constructor requirement).
+    The internal default denominator value.
 </div>
 
 
@@ -270,7 +309,79 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lab_6b_tamim.jsx.html">lab_6b_tamim.jsx</a>, <a href="lab_6b_tamim.jsx.html#line28">line 28</a>
+        <a href="lab_6b_shawlin.jsx.html">lab_6b_shawlin.jsx</a>, <a href="lab_6b_shawlin.jsx.html#line35">line 35</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="numerator"><span class="type-signature"></span>numerator<span class="type-signature"> :number</span></h4>
+
+
+
+
+<div class="description">
+    The internal default numerator value.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lab_6b_shawlin.jsx.html">lab_6b_shawlin.jsx</a>, <a href="lab_6b_shawlin.jsx.html#line29">line 29</a>
     </li></ul></dd>
     
 
@@ -298,7 +409,7 @@
     
 
     
-    <h4 class="name" id="add"><span class="type-signature"></span>add<span class="signature">(a, b<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {number|string}</span></h4>
+    <h4 class="name" id="divide"><span class="type-signature"></span>divide<span class="signature">(numerator, denominator)</span><span class="type-signature"> &rarr; {number|string}</span></h4>
     
 
     
@@ -306,7 +417,7 @@
 
 
 <div class="description">
-    Adds numbers together based on the input type and count, simulating method Overloading.Overload Signatures Handled:1. add(a: number, b: number): number2. add(numbers: number[]): number3. add(a: string, b: string): number (Converts string inputs to numbers)
+    Divides one number by another.Overload Signatures Handled:1. divide(numerator: number, denominator: number): number | string2. divide(numerator: string, denominator: string): number | string (Converts strings to numbers)
 </div>
 
 
@@ -330,8 +441,6 @@
         <th>Type</th>
 
         
-        <th>Attributes</th>
-        
 
         
 
@@ -344,16 +453,13 @@
 
         <tr>
             
-                <td class="name"><code>a</code></td>
+                <td class="name"><code>numerator</code></td>
             
 
             <td class="type">
             
                 
 <span class="param-type">number</span>
-|
-
-<span class="param-type">Array.&lt;number></span>
 |
 
 <span class="param-type">string</span>
@@ -363,25 +469,17 @@
             </td>
 
             
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
 
             
 
-            <td class="description last">The first operand (number, array of numbers, or number string).</td>
+            <td class="description last">The number to be divided.</td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>b</code></td>
+                <td class="name"><code>denominator</code></td>
             
 
             <td class="type">
@@ -397,20 +495,10 @@
             </td>
 
             
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
 
             
 
-            <td class="description last">The second optional operand (number or number string).</td>
+            <td class="description last">The number to divide by.</td>
         </tr>
 
     
@@ -451,7 +539,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lab_6b_tamim.jsx.html">lab_6b_tamim.jsx</a>, <a href="lab_6b_tamim.jsx.html#line44">line 44</a>
+        <a href="lab_6b_shawlin.jsx.html">lab_6b_shawlin.jsx</a>, <a href="lab_6b_shawlin.jsx.html#line50">line 50</a>
     </li></ul></dd>
     
 
@@ -480,7 +568,7 @@
 
         
 <div class="param-desc">
-    The sum of the inputs, or an error message for invalid input.
+    The quotient, or an error message if division by zero occurs.
 </div>
 
 
@@ -512,7 +600,7 @@
     
 
     
-    <h4 class="name" id="handleUserAddition"><span class="type-signature"></span>handleUserAddition<span class="signature">(a, b)</span><span class="type-signature"> &rarr; {number}</span></h4>
+    <h4 class="name" id="getModulus"><span class="type-signature"></span>getModulus<span class="signature">(a, b)</span><span class="type-signature"> &rarr; {number}</span></h4>
     
 
     
@@ -520,7 +608,7 @@
 
 
 <div class="description">
-    A specialized function for event handlers, often starting with 'handle'.This example demonstrates adding two numbers after a hypothetical user interaction.
+    Overloaded Functionality: Calculates the remainder (modulus) of a division.This separates the remainder logic, fulfilling the requirement for different parameters.
 </div>
 
 
@@ -572,7 +660,7 @@
 
             
 
-            <td class="description last">The first operand.</td>
+            <td class="description last">The dividend.</td>
         </tr>
 
     
@@ -595,7 +683,7 @@
 
             
 
-            <td class="description last">The second operand.</td>
+            <td class="description last">The divisor.</td>
         </tr>
 
     
@@ -636,7 +724,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lab_6b_tamim.jsx.html">lab_6b_tamim.jsx</a>, <a href="lab_6b_tamim.jsx.html#line83">line 83</a>
+        <a href="lab_6b_shawlin.jsx.html">lab_6b_shawlin.jsx</a>, <a href="lab_6b_shawlin.jsx.html#line82">line 82</a>
     </li></ul></dd>
     
 
@@ -665,7 +753,7 @@
 
         
 <div class="param-desc">
-    The result of the addition.
+    The remainder (modulus).
 </div>
 
 
