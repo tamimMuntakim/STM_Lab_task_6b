@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+/**
+ * @file This file serves as the main application entry point (App).
+ * It replaces the boilerplate with the MVVM structure, importing the top-level View component.
+ * @author ami <ami@google.com>
+ * @version 1.2.1
+ */
 
-function App() {
-  const [count, setCount] = useState(0)
+import React from "react";
+// Imports the View component from the 'components' folder.
+import AdditionView from "./components/AdditionView";
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+/**
+ * The main application component.
+ * This component's sole responsibility is to set up the global layout
+ * and render the primary View component, thus adhering to MVVM separation.
+ *
+ * @function
+ * @returns {JSX.Element}
+ */
+const App = () => {
+    return (
+        <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
+            {/* Renders the top-level View component, which contains the ViewModel and Model logic */}
+            <AdditionView />
+        </div>
+    );
+};
 
-export default App
+export default App;
