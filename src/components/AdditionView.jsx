@@ -44,11 +44,10 @@ const AdditionView = () => {
                     type="number"
                     value={operandA}
                     onChange={handleChangeA}
-                    className="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-150 ease-in-out"
+                    className="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-150 ease-in-out text-black"
                     aria-label="First Operand"
                 />
             </div>
-
             {/* Input B */}
             <div className="space-y-2">
                 <label className="block text-sm font-medium text-gray-700">
@@ -58,11 +57,10 @@ const AdditionView = () => {
                     type="number"
                     value={operandB}
                     onChange={handleChangeB}
-                    className="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-150 ease-in-out"
+                    className="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-150 ease-in-out text-black"
                     aria-label="Second Operand"
                 />
             </div>
-
             {/* Calculation Button */}
             <div>
                 <button
@@ -72,7 +70,6 @@ const AdditionView = () => {
                     Calculate Sum
                 </button>
             </div>
-
             {/* Result Display */}
             <div className="pt-4 border-t border-gray-200">
                 <h2 className="text-xl font-semibold text-gray-800">Result</h2>
@@ -84,5 +81,4 @@ const AdditionView = () => {
         </div>
     );
 };
-
 export default AdditionView;
