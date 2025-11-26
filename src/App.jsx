@@ -8,6 +8,7 @@
 import React from "react";
 // Imports the View component from the 'components' folder.
 import AdditionView from "./components/AdditionView";
+import SubtractionView from "./components/SubtractionVIew";
 
 /**
  * The main application component.
@@ -19,9 +20,12 @@ import AdditionView from "./components/AdditionView";
  */
 const App = () => {
     return (
-        <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
-            {/* Renders the top-level View component, which contains the ViewModel and Model logic */}
+        <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-start p-8 space-y-16">
+            {/* Addition */}
             <AdditionView />
+
+            {/* Subtraction */}
+            <SubtractionView />
         </div>
     );
 };
